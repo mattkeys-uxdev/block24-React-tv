@@ -26,3 +26,30 @@ header {
 button {
   padding: 0.25rem 0.5rem;
 }
+
+/* :root {
+  --bg-dark: #050505;
+  --accent-red: #e50914; /* Netflix vibe */
+/* --text-bright: #ffffff;
+  --text-dim: #b3b3b3;
+} */
+
+/* body {
+  background-color: var(--bg-dark);
+  color: var(--text-bright);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+} */
+
+/* header {
+  padding: 1.5rem 4%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    transparent 100%
+  );
+  position: sticky;
+  top: 0;
+  z-index: 100;
+} */

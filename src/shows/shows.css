@@ -26,3 +26,37 @@
     grid-template-columns: minmax(30ch, auto) 1fr;
   }
 }
+
+/* .shows {
+  display: flex;
+  gap: 20px;
+}
+
+.show {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.2s;
+  font-size: 0.9rem;
+}
+
+.show:hover {
+  color: var(--text-bright);
+}
+
+.show.selected {
+  color: var(--text-bright);
+  font-weight: 700;
+  border-bottom: 3px solid var(--accent-red);
+  padding-bottom: 5px;
+}
+
+.show-details {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+  padding: 2rem 4%;
+} */
