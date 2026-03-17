@@ -1,4 +1,4 @@
-.shows {
+/* .shows {
   display: flex;
 }
 
@@ -25,7 +25,11 @@
   .show-details {
     grid-template-columns: minmax(30ch, auto) 1fr;
   }
-}
+} */
+
+/* =====
+Extra CSS  
+==========*/
 
 /* .shows {
   display: flex;
@@ -60,3 +64,67 @@
   gap: 40px;
   padding: 2rem 4%;
 } */
+
+/* =======
+Different CSS
+============*/
+.shows {
+  display: flex;
+  gap: 30px;
+}
+
+.show {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+
+.show:hover {
+  color: var(--text-main);
+}
+
+.show.selected {
+  color: var(--text-main);
+}
+
+.show.selected::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--netflix-red);
+  border-radius: 2px;
+}
+
+.show-details {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 60px;
+  padding: 3rem 4%;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.select-prompt {
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}

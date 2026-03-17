@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,31 +25,60 @@ header {
 
 button {
   padding: 0.25rem 0.5rem;
+} */
+
+:root {
+  --netflix-red: #e50914;
+  --bg-black: #080808;
+  --card-bg: #141414;
+  --text-main: #ffffff;
+  --text-muted: #a3a3a3;
 }
 
-/* :root {
-  --bg-dark: #050505;
-  --accent-red: #e50914; /* Netflix vibe */
-/* --text-bright: #ffffff;
-  --text-dim: #b3b3b3;
-} */
-
-/* body {
-  background-color: var(--bg-dark);
-  color: var(--text-bright);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+* {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-} */
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* header {
+body {
+  background-color: var(--bg-black);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    transparent 100%
+  );
+  color: var(--text-main);
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.5rem 4%;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.9) 0%,
     transparent 100%
   );
   position: sticky;
   top: 0;
-  z-index: 100;
-} */
+  z-index: 1000;
+}
+
+header p {
+  color: var(--netflix-red);
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
